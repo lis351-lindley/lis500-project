@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*Header styling*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-class {
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+/*Navigation bar unordered list styling*/
+nav ul {
+    list-style: none;
+    background-color: #444;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+/*Navigation bar bullet styling*/
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #777676; /* Change background on hover */
+    color: #8dadff; /* Change text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/*Adding padding to each individual section*/
+section {
+    padding: 20px;
+}
+
+.intro-text {
+    text-align: center; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Standardizing the format for all the images*/
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding-left: 5;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Accessibility */
+a:focus, button:focus {
+    outline: 3px solid #2a7ae2;
+}
