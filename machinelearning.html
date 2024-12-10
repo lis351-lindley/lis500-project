@@ -34,7 +34,7 @@
         </p>
 
         <p>
-            It's important to understand what machine learning is and how it learns from the data that is being input into it because this is also how many of the biases and problems arise. 
+            It's important to understand what machine learning is and how it learns from the data that is being input into it because this is also how many of the biases and problems arise. As we learned in class Benjamin talks about in Race After Technology, that even seemingly neutral AI systems can reinforce societal inequalities. 
         </p>
 
         <h2>OUR PROJECT</h2>
@@ -44,22 +44,29 @@
             The purpose of this project is to create a machine learning model that can identify specific animals that the user has uploaded into the machine. Using Google’s Teachable Machine, we created an AI based classifier that can pick between ten animal categories. The animals that it can pick between are: Dog, Eagle, Deer, Cat, Zebra, Squirrel, Penguin, Horse, Elephant, and Gorilla. The goal of this tool was not only to work, but to also have ethical considerations, caused by Joy Buolamwini’s “Unmasking AI.” We want to not only have a working machine, but we want the machine to represent a fair reflection of the group and not have any biases even though it is harder to reflect these on a smaller simple machine.
         </p>
 
+        <img src="animal-collage.png" alt="Animal Picture Collage" height="500" width="1200">
+
+
         <h3>Problem Addressed</h3>
         <p>
-            AI systems often have problems with bias, limited accessibility, and lack of transparency. In our project we aimed to limit these issues by making sure our machine performed reliably across all image inputs.
+            AI systems often have problems with bias, limited accessibility, and lack of transparency. In our project we aimed to limit these issues by making sure our machine performed reliably across all image inputs. Specifically, we tested our model comprehensively by reducing false positives (data points where the model incorrectly classifies something as something else), enhancing detection accuracy in varied conditions (pictures of animals on phones etc), and maintaining a balanced and transparent dataset to promote fairness and inclusivity (samples of the same animals in various settings). After reading about Ellen Pao’s, Heal Thyself, we understand that diversity and inclusion are critical in building systems. By intentionally expanding out dataset to include varied animal images, we aim to reflect a commitment to fairness and accessibility in AI design.
         </p>
 
         <h3>Technical Overview</h3>
         <p>
-            Data Gathering: A dataset of animal images was created keeping many of the biases and issues that we learned about in mind. We did this through using proper variety, making sure there were different angles, backgrounds, and lighting.
+            Data Gathering: A dataset of animal images consisting of 60 images per animal and 10 total animals was curated, keeping many of the issues such as the biases in mind. We did this through using proper variety, making sure the samples were in different angles, backgrounds, and lighting settings for each class of animals. This balanced approach helps prevent the model from being biased toward more frequently represented animals.
         </p>
+ 		<p>
+        	Observations & Results : After training, we observed a false positive rate of approximately 10% when we conducted a custom experiment on a sample size of 10 images. This mainly occurred with images that have similar textures or colors to target categories. For example, a dark colored horse whose head was only present in the sample was misclassified as a gorilla due to similar color features. Additionally, the model struggled with images taken in low lighting or with partial occlusions, such as a hand obstructing the image sample. Adding more data would definitely improve the quality of the model. Since we tried to find distinct images of the same animal, we limited each category to 60 samples, but making this more diverse would enable the model to capture and correctly classify a wider range of animals leading to improved accuracy. During testing we also find that the model does relatively well with samples that are augmented from previous samples through flipping, rotation etc. This leads us to believe that our samples are quite distinct and robust. In our project since each class had an equal number of samples(60), ensuring that all classes have coparable training information. We hope this eliminates biases that could arise from differing sample sizes for each class, allowing the model to learn and classify each category effectively without favoring any particular group.
+    </p>
 
         <img src="trainingpic2.png" alt="Picture Of Model Training" width="600">
 
         <h3>Key Features</h3>
         <ul>
-            <li><strong>User Accessibility:</strong> A easy to use interface that is very straightforward</li>
-            <li><strong>Confidence Scores:</strong> The predictions are given a confidence score that helps to ensure how likely the image being input is accurate</li>
+            <li><strong>User Accessibility:</strong> An intuitive and straightforward interface ensures ease of use for all users.</li>
+            <li><strong>Confidence Scores:</strong> Each prediction includes a confidence score, providing users with an understanding of the model’s certainty regarding its classifications.</li>
+        <li><strong>Transparent Data Storage:</strong> The dataset is stored on GitHub (see repo link below), enhancing accessibility and allowing external review, which advances the transparency and reproducibility of our model.</li>
         </ul>
         <h3>Insights from "Unmasking AI"</h3>
         <ul>
@@ -79,13 +86,14 @@
 
         <h3>Reflection and Challenges</h3>
         <ul>
-            <li>Simplistic Design: While the machine we created was very simple and made for the machine to be easy to use it also helped to highlight many of the limitations and biases that we learned about. Since the design was so simple its hard to combat these challenges.</li>
+            <li>Simplistic Design: While the machine we created was very simple and made for the machine to be easy to use it also helped to highlight many of the limitations and biases that we learned about. Since the design was so simple its hard to combat these challenges. As Ellen Poa criques in Tech, Heal Thyself, tech systems often don't have the ability to have accountability. This in a sense is reflected in our model because it does not allow for user feedback, although our system is a very simple system.</li>
             <li>Ethical Challenges in Simple Systems: There are many questions that are raised by Buolamwinis work. For example, who decides what data is used? Whose perspectives are prioritized? While we aimed to combat these challenges in our machine as well, it's still a difficult challenge. Its also important to address these challenges in simple projects like ours, just as it would be important to address them in larger-scale projects as well.</li>
+            <li>Castillas analysis of meritocracy helps to show that claims of objectivity in AI can mask system inequalities. In our project the imbalance between categories like cats and eagles highlights the impact of these biases, even in simplified models.</li>
             <li>Dataset Limitations: We faced the challenge of making sure out dataset captured a good variety for classification. While creating this it helped to remind us of the bigger implications of biases or incomplete training data.</li>
         </ul>
         <h3>Broader Implications</h3>
         <p>
-            This project was a simple way that helped to demonstrate how even basic AI systems can act as mirrors of societal values and assumptions. By reflecting on the lessons from Unmasking AI, we helped to gain a deeper understanding for the importance of ethical design when it comes to creating a machine. Our project also helped us to work on our skills of understanding ethical context and biases when creating a machine. Engaging in these helps us to have a better and more responsible way for AI development in the future.
+            This project was a simple way that helped to demonstrate how even basic AI systems can act as mirrors of societal values and assumptions. By reflecting on the lessons from Unmasking AI, we helped to gain a deeper understanding for the importance of ethical design when it comes to creating a machine. Our project also helped us to work on our skills of understanding ethical context and biases when creating a machine. Engaging in these helps us to have a better and more responsible way for AI development in the future. This project shows the concerns raised by Erica Joy in FFFFFF Diversity, where superficial inclusion fails to address deeper systemic inequalities. Expanding categories in our dataset is a step towards addressing this critique.
         </p>
 
         <h3>Watch Our Model!</h3>
@@ -99,20 +107,20 @@
         <p>
             Click the link below to see our model hosted on Google's Teachable Machine!
         </p>
-    <!--Project Link-->
-        <a href="https://teachablemachine.withgoogle.com/models/SrmjtP7Wf/" target="_blank">Google's Teachable Machine Animal Classification Algorithm</a>
-    	<h3>Try Our Model!</h3>
-        <p>
-            Click the link below to try out our model!
-        </p>
-<!--Tryout Link-->
-        <a href="algorithm.html">Try out our model in real time</a>
 
+        <a href="https://teachablemachine.withgoogle.com/models/SrmjtP7Wf/" class="button-see">Google's Teachable Machine Animal Classification Algorithm</a> <!--Project Link-->
+        <h3>Try Our Model!</h3>
+        <p>
+            Click the button below to try out our model!
+        </p>
+        
+        <a href="algorithm.html" class="button-try">Try out our model in real time</a> <!--Tryout Link-->
+                    
         <h3>Check out our code!</h3>
         <p>
             Click the link below to visit our GitHub Repository!
         </p>
-        <a href="https://github.com/lis351-lindley/lis500-project" target="_blank">Project GitHub Repository</a>
+        <a href="https://github.com/lis351-lindley/lis500-project" class="button-code">Project GitHub Repository</a> <!--Code link-->
 
         <h2>Conclusion</h2>
         <p>

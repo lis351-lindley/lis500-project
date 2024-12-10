@@ -52,7 +52,7 @@
       } else if (label == "Squirrel") {
         emoji = "🐿️";
       } else if (label == "Penguin") {
-        emoji = "🐶";
+        emoji = "🐧";
       } else if (label == "Horse") {
         emoji = "🐴";
       } else if (label == "Elephant") {

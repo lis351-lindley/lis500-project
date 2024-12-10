@@ -21,6 +21,7 @@ header {
 
 h2{
     text-decoration: underline;
+    background-color: #0015ff20
 }
 
 /*Navigation bar unordered list styling*/
@@ -54,6 +55,8 @@ nav ul li a:hover {
 /*Adding padding to each individual section*/
 section {
     padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .intro-text {
@@ -72,6 +75,63 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Different button styling*/
+
+.button-try {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #512409; /* Blue button color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-try:hover {
+    background-color: #a44d17; /* Darker blue on hover */
+}
+
+.button-see {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #022b07; /* Blue button color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-see:hover {
+    background-color: #067513; /* Darker blue on hover */
+}
+
+.button-code {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4d0a67; /* Blue button color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button-code:hover {
+    background-color: #6e1093; /* Darker blue on hover */
+}
+
 
 /*Standardizing the format for all the images*/
 img {
